@@ -9,4 +9,4 @@ Join the IRC channel: [#iwakura on irc.freenode.net](http://webchat.freenode.net
 Install the dependencies:
 
 - go (>=1.13)
-- navidoc
+- [navidoc](https://gitea.com/iwakuramarie/navidoc)
