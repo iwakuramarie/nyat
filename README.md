@@ -27,6 +27,8 @@ Note that the example HTML filter (off by default), additionally needs `w3m` and
 Recent versions of nyat are available on:
 - [The official Gitea page of course](https://gitea.com/iwakuramarie/nyat/releases/)
 
+- [Catbox](https://files.catbox.moe/mltyz2.gz)
+
 Other platforms soon.
 
 ### From Source
