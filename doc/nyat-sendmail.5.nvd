@@ -1,0 +1,30 @@
+nyat-sendmail(5)
+
+# NAME
+
+nyat-sendmail - sendmail configuration for *nyat*(1)
+
+# SYNOPSIS
+
+nyat can defer to sendmail for the delivery of outgoing messages.
+
+# CONFIGURATION
+
+In accounts.conf (see *nyat-config*(5)), the following sendmail-specific
+options are available:
+
+*outgoing*
+	/path/to/sendmail
+
+	This should be set to the path to the sendmail binary you wish to use,
+	which is generally /usr/bin/sendmail. nyat will execute it with a list of
+	recipients on the command line and pipe the message to deliver to stdin.
+
+# SEE ALSO
+
+*nyat*(1) *nyat-config*(5)
+
+# AUTHOR
+
+Maintained by Marie Iwakura <iwakuramarie@waifu.club>. For more information about nyat development, see
+https://gitea.com/iwakuramarie/nyat.

@@ -1,0 +1,74 @@
+nyat-notmuch(5)
+
+# NAME
+
+nyat-notmuch - notmuch configuration for *nyat*(1)
+
+# SYNOPSIS
+
+nyat supports using the notmuch email system as a backend, for fast indexing
+and searching.
+
+For this to be enabled, nyat needs to be build with notmuch support.++
+Refer to the installation instructions for details.
+
+# CONFIGURATION
+
+Notmuch accounts currently are not supported with the :new-account command and
+must be added manually.
+
+In accounts.conf (see *nyat-config*(5)), the following notmuch-specific
+options are available:
+
+*source*
+	notmuch://path
+
+	The *source* indicates the path to the directory containing your notmuch
+	database (usually a .notmuch folder).
+
+	The path portion of the URL following _notmuch://_ must be either an absolute
+	path prefixed by */* or a path relative to your home directory prefixed with
+	*~*. For example:
+
+		source = notmuch:///home/me/mail
+
+		source = notmuch://~/mail
+
+*query-map*
+	Path to a file containing a mapping from display name to notmuch query in
+	the form of NAME=QUERY.++
+Multiple entries can be specified, one per line.++
+Lines starting with '#' are ignored and serve as comments.
+
+	e.g. inbox=tag:inbox and not tag:archived
+
+	Default: none
+
+*exclude-tags*
+	Comma separated list of tags which will be excluded from query results,
+	unless explicitly mentioned in the query.++
+This can for example be useful if you use an archive or spam tag.
+
+	Default: none
+
+# USAGE
+
+Notmuch shows slightly different behaviour than for example imap.++
+Some commands are simply unsupported because they have no proper counterpart
+in notmuch, like :delete and :archive.++
+Others are slightly different in semantics and mentioned below:
+
+*cf* <notmuch query>
+	The change folder command allows for arbitrary notmuch queries and should
+	usually be preferred over *:filter* as it will be much faster if you use
+	the notmuch database to do the filtering
+
+
+# SEE ALSO
+
+*nyat*(1) *nyat-config*(5) *nyat-smtp*(5) *nyat-maildir*(5)
+
+# AUTHOR
+
+Maintained by Marie Iwakura <iwakuramarie@waifu.club>. For more information about nyat development, see
+https://gitea.com/iwakuramarie/nyat.
