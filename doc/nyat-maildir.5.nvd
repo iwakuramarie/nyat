@@ -1,0 +1,40 @@
+nyat-maildir(5)
+
+# NAME
+
+nyat-maildir - maildir configuration for *nyat*(1)
+
+# SYNOPSIS
+
+nyat implements the maildir format.
+
+# CONFIGURATION
+
+Maildir accounts currently are not supported with the :new-account command and
+must be added manually to the *nyat-config*(5) file.
+
+The following maildir-specific options are available:
+
+*source*
+	maildir://path
+
+	The *source* indicates the path to the directory containing your maildirs
+	rather than one maildir specifically.
+
+	The path portion of the URL following _maildir://_ must be either an absolute
+	path prefixed by */* or a path relative to your home directory prefixed with
+	*~*. For example:
+
+		source = maildir:///home/me/mail
+
+		source = maildir://~/mail
+
+# SEE ALSO
+
+*nyat*(1) *nyat-config*(5) *nyat-smtp*(5) *nyat-notmuch*(5)
+
+# AUTHORS
+
+Maintained by Drew DeVault <sir@cmpwn.com>, who is assisted by other open
+source contributors. For more information about nyat development, see
+https://gitea.com/iwakuramarie/nyat.
