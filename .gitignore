@@ -1,3 +1,7 @@
 .history
 .history/
 .history/*
+*.1
+*.5
+*.7
+*.conf
