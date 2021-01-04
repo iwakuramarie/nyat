@@ -3,7 +3,7 @@ module gitea.com/iwakuramarie/nyat
 go 1.13
 
 require (
-	gitea.com/iwakuramarie/getopt
+	git.sr.ht/~sircmpwn/getopt v0.0.0-20190808004552-daaf1274538b
 	github.com/creack/pty v1.1.10
 	github.com/danwakefield/fnmatch v0.0.0-20160403171240-cbb64ac3d964
 	github.com/ddevault/go-libvterm v0.0.0-20190526194226-b7d861da3810

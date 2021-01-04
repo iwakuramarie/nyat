@@ -1,6 +1,6 @@
 cloud.google.com/go v0.34.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
-gitea.com/iwakuramarie/getopt h1:da5JBQ6dcW14aWnEf/pFRIMV2PsqTQEWmR+V2sw5oxU=
-gitea.com/iwakuramarie/getopt go.mod h1:wMEGFFFNuPos7vHmWXfszqImLppbc0wEhh6JBfJIUgw=
+git.sr.ht/~sircmpwn/getopt v0.0.0-20190808004552-daaf1274538b h1:da5JBQ6dcW14aWnEf/pFRIMV2PsqTQEWmR+V2sw5oxU=
+git.sr.ht/~sircmpwn/getopt v0.0.0-20190808004552-daaf1274538b/go.mod h1:wMEGFFFNuPos7vHmWXfszqImLppbc0wEhh6JBfJIUgw=
 github.com/ProtonMail/crypto v0.0.0-20200420072808-71bec3603bf3 h1:JW27/kGLQzeM1Fxg5YQhdkTEAU7HIAHMgSag35zVTnY=
 github.com/ProtonMail/crypto v0.0.0-20200420072808-71bec3603bf3/go.mod h1:Pxr7w4gA2ikI4sWyYwEffm+oew1WAJHzG1SiDpQMkrI=
 github.com/brunnre8/go.notmuch v0.0.0-20201126061756-caa2daf7093c h1:dh58QrW3/S/aCnQPFoeRRE9zMauKooDFd5zh1dLtxXs=
